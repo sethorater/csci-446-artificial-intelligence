@@ -1,0 +1,4 @@
+Lecture Notes
+
+8_25_27
+    - The algorithm will be a depth first search (DFS).
