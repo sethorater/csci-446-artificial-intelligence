@@ -2,21 +2,28 @@
 # Date: 8_27_25
 # Program: Sudoku Puzzle
 # Class: CSCI 446
+import numpy as np
 
-f = open("Easy-P1.txt")
-print(f.read)
 
-print("Hello")
+
+print("This works!")
 
 class Thing:
-  def __init__(self, number, permanent, grid, spot):
+  def __init__(self, number, permanent, row, column, grid):
     self.number = number
     self.permanent = permanent
+    self.row = row
+    self.column = column
     self.grid = grid
-    self.spot = spot
+
+#p1 = Thing(25, True, 26, 6)
+
+#print(p1.number)
+#print(p1.permanent)
+
+f = open("../Puzzles/Easy-P1.txt")
+
+puzzle = np.zeros((9, 9), dtype=Thing)
+print(puzzle)
 
 
-p1 = Thing("John", 36)
-
-print(p1.name)
-print(p1.age)
