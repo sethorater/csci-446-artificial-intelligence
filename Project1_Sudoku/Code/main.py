@@ -6,12 +6,17 @@
 import numpy as np
 from class_thing import Thing
 
+# --------------------------------------------------
+# IMPORT THE FILE || CREATE 2x2 ARRAY
+# --------------------------------------------------
+
 file = open("../Puzzles/Easy-P1.txt", encoding="utf-8-sig")
 
 puzzle = np.zeros((9, 9), dtype=object)
 counter = 0
 grid = 0
 rowSPot = 0
+
 for row in file:
     line = row.strip().split(",")
     colSpot = 0
@@ -27,9 +32,7 @@ for row in file:
         colSpot = colSpot + 1
     rowSPot += 1
 
-for i in range(9):
-    for j in range(9):
-        print(i, j, puzzle[i][j].number)
+# --------------------------------------------------
 
 
 
