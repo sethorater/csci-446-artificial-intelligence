@@ -5,3 +5,5 @@
 
 f = open("Easy-P1.txt")
 print(f.read)
+
+print("Hello")
