@@ -1,3 +1,7 @@
+#------------------------------------------
+# This is where the 'Thing' class will be held
+#------------------------------------------
+
 class Thing:
   def __init__(self, number, permanent, row, column, grid):
     self.number = number
