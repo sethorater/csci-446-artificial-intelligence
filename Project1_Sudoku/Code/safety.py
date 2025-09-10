@@ -7,6 +7,7 @@
 #------------------------------------------
 
 def checkIfSafe(puzzle, num, row, col):
+
     for x in range(9):
         if puzzle[row][x].number == num:
             return False
@@ -15,13 +16,13 @@ def checkIfSafe(puzzle, num, row, col):
         if puzzle[x][col].number == num:
             return False
 
-    startrow = row - (row % 3)
-    startcol = col - (col % 3)
-
-    for i in range(3):
-        for j in range(3):
-            if puzzle[startrow + i][startcol + j].number == num:
+    gridInQuestion = puzzle[row][col].grid
+    for x in range(9):
+        for y in range(9):
+            if puzzle[x][y].grid == gridInQuestion and puzzle[x][y].number == num:
                 return False
+
+
     return True
 
 def checkEmpty(puzzle):

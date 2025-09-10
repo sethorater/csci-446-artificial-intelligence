@@ -29,7 +29,7 @@ def importPuzzle(file, puzzle):
             else:
                 num = int(val)
 
-            if counter < 3:
+            if counter < 3: #to be changed but hardcoded for now to make work
                 grid = 1
             elif counter < 6:
                 grid = 2
