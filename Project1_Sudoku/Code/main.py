@@ -9,6 +9,7 @@
 
 from puzzleImp import *
 from btAlgorithm import *
+from safety import *
 
 #------------------------------------------
 # CREATE PUZZLE
@@ -23,4 +24,9 @@ importPuzzle(file, puzzle)
 # CALL ALGORITHM
 #------------------------------------------
 
-btAlg(puzzle)
+print("\nHere is the unsolved puzzle:\n")
+printPuzzle(puzzle)
+print("\nSolving...\n\nHere is the solved puzzle:\n")
+
+btAlg(puzzle, 0, 0)
+printPuzzle(puzzle)

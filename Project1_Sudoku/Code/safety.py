@@ -1,5 +1,5 @@
 #--------------------------------------------------
-# CHECK IF VALID MOVE
+# CHECK IF VALID MOVE AND CHECK IF EMPTY || PRINT FUNCTION TOO
 #--------------------------------------------------
 
 #------------------------------------------
@@ -8,7 +8,7 @@
 
 def checkIfSafe(puzzle, num, row, col):
     for x in range(9):
-        if puzzle[row][x] == num:
+        if puzzle[row][x].number == num:
             return False
 
     for x in range(9):
@@ -23,3 +23,16 @@ def checkIfSafe(puzzle, num, row, col):
             if puzzle[startrow + i][startcol + j].number == num:
                 return False
     return True
+
+def checkEmpty(puzzle):
+    for x in range(9):
+        for y in range(9):
+            if puzzle[x][y] == 0:
+                return x, y
+    return None
+
+def printPuzzle(puzzle):
+    for x in range(9):
+        for y in range(9):
+            print(puzzle[x][y].number, end=" ")
+        print(" ")
