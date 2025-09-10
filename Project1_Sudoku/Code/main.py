@@ -15,7 +15,7 @@ from safety import *
 # CREATE PUZZLE
 #------------------------------------------
 
-file = "../Puzzles/Insane-P1.txt"
+file = "../Puzzles/Easy-P1.txt"
 puzzle = np.zeros((9, 9), dtype=object)
 
 importPuzzle(file, puzzle)
@@ -23,6 +23,9 @@ importPuzzle(file, puzzle)
 #------------------------------------------
 # CALL ALGORITHM
 #------------------------------------------
+
+getDomain(puzzle)
+print(puzzle[0][0].domain)
 
 print("\nHere is the unsolved puzzle:\n")
 printPuzzle(puzzle)

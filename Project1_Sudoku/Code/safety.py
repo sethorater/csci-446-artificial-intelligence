@@ -37,3 +37,10 @@ def printPuzzle(puzzle):
         for y in range(9):
             print(puzzle[x][y].number, end=" ")
         print(" ")
+
+def getDomain(puzzle):
+    for x in range(9):
+        for y in range(9):
+            for i in range(1-10):
+                if(checkIfSafe(puzzle, i, x, y)):
+                    puzzle[x][y].domain.append(i)
