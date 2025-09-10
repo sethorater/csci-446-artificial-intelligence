@@ -1,10 +1,13 @@
+#------------------------------------------
+# This is where the puzzle gets imported
+#------------------------------------------
+
 import numpy as np
 from class_thing import *
 
-def importPuzzle():
-    file = open("../Puzzles/Easy-P1.txt", encoding="utf-8-sig")
+def importPuzzle(file, puzzle):
+    file = open(file, encoding="utf-8-sig")
 
-    puzzle = np.zeros((9, 9), dtype=object)
     counter = 0
     grid = 0
     rowSPot = 0
@@ -79,3 +82,4 @@ def importPuzzle():
             colSpot = colSpot + 1
             counter = counter + 1
         rowSPot += 1
+    return puzzle
