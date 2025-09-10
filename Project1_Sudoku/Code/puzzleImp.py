@@ -1,9 +1,17 @@
+# --------------------------------------------------
+# IMPORT THE FILE || CREATE 2x2 ARRAY || RETURN PUZZLE
+# --------------------------------------------------
+
 #------------------------------------------
-# This is where the puzzle gets imported
+# IMPORTS
 #------------------------------------------
 
 import numpy as np
 from class_thing import *
+
+#------------------------------------------
+# FUNCTIONS
+#------------------------------------------
 
 def importPuzzle(file, puzzle):
     file = open(file, encoding="utf-8-sig")

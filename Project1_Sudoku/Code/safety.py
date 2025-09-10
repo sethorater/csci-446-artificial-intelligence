@@ -1,3 +1,11 @@
+#--------------------------------------------------
+# CHECK IF VALID MOVE
+#--------------------------------------------------
+
+#------------------------------------------
+# FUNCTIONS
+#------------------------------------------
+
 def checkIfSafe(puzzle, num, row, col):
     for x in range(9):
         if puzzle[row][x] == num:
@@ -15,7 +23,3 @@ def checkIfSafe(puzzle, num, row, col):
             if puzzle[startrow + i][startcol + j].number == num:
                 return False
     return True
-
-
-
-
