@@ -15,7 +15,7 @@ from safety import *
 # CREATE PUZZLE
 #------------------------------------------
 
-file = "../Puzzles/Easy-P1.txt"
+file = "../Puzzles/Insane-P1.txt"
 puzzle = np.zeros((9, 9), dtype=object)
 
 importPuzzle(file, puzzle)
@@ -30,3 +30,4 @@ print("\nSolving...\n\nHere is the solved puzzle:\n")
 
 btAlg(puzzle, 0, 0)
 printPuzzle(puzzle)
+
