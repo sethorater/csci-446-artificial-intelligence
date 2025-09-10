@@ -84,9 +84,9 @@ def importPuzzle(file, puzzle):
             elif counter < 81:
                 grid = 9
             if num != 0:
-                puzzle[rowSPot][colSpot] = Thing(num, True, rowSPot, colSpot, grid)
+                puzzle[rowSPot][colSpot] = Thing(num, True, rowSPot, colSpot, grid, [])
             else:
-                puzzle[rowSPot][colSpot] = Thing(num, False, rowSPot, colSpot, grid)
+                puzzle[rowSPot][colSpot] = Thing(num, False, rowSPot, colSpot, grid, [])
             colSpot = colSpot + 1
             counter = counter + 1
         rowSPot += 1
