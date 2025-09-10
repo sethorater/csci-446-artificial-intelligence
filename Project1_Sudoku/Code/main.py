@@ -6,6 +6,7 @@
 #------------------------------------------
 import numpy as np
 from class_thing import Thing
+from safety import checkIfSafe
 
 # --------------------------------------------------
 # IMPORT THE FILE || CREATE 2x2 ARRAY
@@ -89,11 +90,8 @@ for row in file:
         counter = counter + 1
     rowSPot += 1
 
-for i in range(9):
-    for j in range(9):
-        print(puzzle[i][j].grid)
 
-# --------------------------------------------------
+
 
 
 
