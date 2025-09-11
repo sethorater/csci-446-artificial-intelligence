@@ -26,7 +26,6 @@ def btAlg(puzzle, row, col):
         return btAlg(puzzle, row, col + 1)
     for num in range(1, 10):
         if checkIfSafe(puzzle, num, row, col):
-            ##########
             puzzle[row][col].number = num
             if btAlg(puzzle, row, col + 1):
                 return True
