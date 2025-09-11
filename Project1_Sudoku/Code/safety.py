@@ -45,3 +45,9 @@ def getInitialDomain(puzzle):
                 if(checkIfSafe(puzzle, i, x, y)):
                     if (puzzle[x][y].number == 0):
                         puzzle[x][y].domain.append(i)
+
+def readDomain(puzzle, num, row, col):
+    for item in puzzle[row][col].domain:
+        if (item == num):
+            return True
+    return False
