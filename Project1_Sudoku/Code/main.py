@@ -24,8 +24,11 @@ importPuzzle(file, puzzle)
 # CALL ALGORITHM
 #------------------------------------------
 
-getDomain(puzzle)
+getInitialDomain(puzzle)
 print(puzzle[0][0].domain)
+print(puzzle[0][1].domain)
+print(puzzle[0][2].domain)
+
 
 print("\nHere is the unsolved puzzle:\n")
 printPuzzle(puzzle)
